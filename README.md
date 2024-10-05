@@ -18,7 +18,6 @@
 - Click on the green "Code" button and select "Download ZIP"
 2. Extract the zip file
 - Delete Readme.md file
-- Delete the zip file after extracting
 3. Go to profile directory of Zen Browser
 - Or open Zen Browser and go to `about:profiles`
 - Search for "Root directory" in the profile you're using
