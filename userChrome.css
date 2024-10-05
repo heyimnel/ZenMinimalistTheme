@@ -1,0 +1,55 @@
+.tab-background:is([selected], [multiselected]) {
+    background-color: rgba(40, 40, 40, 0.4) !important;
+    background-image: none !important;
+}
+
+#navigator-toolbox {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(5px);
+}
+
+#urlbar,
+#navigator-toolbox {
+    box-shadow: none !important;
+}
+
+#PanelUI-menu-button {
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+#identity-icon,
+#identity-box,
+.verifiedDomain,
+#ion-button {
+    display: none !important;
+}
+
+#nav-bar-customization-target {
+    position: relative;
+}
+
+#nav-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+}
+.urlbar-icon,
+#translations-button-icon {
+    display: none !important;
+}
+
+@media (-moz-bool-pref: "zen.tabs.vertical") {
+    #TabsToolbar-customization-target {
+        &::after {
+            height: 0px !important;
+        }
+    }
+}

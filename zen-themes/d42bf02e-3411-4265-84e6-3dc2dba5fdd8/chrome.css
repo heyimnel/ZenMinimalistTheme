@@ -1,0 +1,30 @@
+@-moz-document url-prefix("chrome:") {
+    /* Move Maximize Button to Right-Side */
+    .titlebar-button.titlebar-max,
+    .titlebar-button.titlebar-restore {
+        position: fixed;
+        right: 11px;
+        top: 12px;
+    }
+    #PanelUI-button {
+        margin-right: 36px;
+    }
+    #urlbar-background {
+        background: transparent !important;
+        background-color: rgba(0, 0, 0, 0.01) !important;
+    }
+
+    /* Move Close Button a little to the right too */
+    .titlebar-button.titlebar-close {
+        margin-left: 10px;
+    }
+
+    #zen-appcontent-navbar-container {
+        box-shadow: none !important;
+    }
+
+    /* Fix Corners */
+    #zen-main-app-wrapper {
+        border-radius: 6px 6px 0px 0px;
+    }
+}

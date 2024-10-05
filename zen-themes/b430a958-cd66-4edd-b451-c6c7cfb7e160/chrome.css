@@ -1,0 +1,11 @@
+@-moz-document url-prefix("chrome:") {
+    #unified-extensions-button {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #unified-extensions-button:hover,
+    #unified-extensions-button:focus {
+        opacity: 1;
+    }
+}
